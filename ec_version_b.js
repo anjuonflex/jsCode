@@ -119,7 +119,7 @@ var calendarHeatmap = {
       var dayIndex = Math.round((moment() - moment().subtract(1, 'year').startOf('week')) / 86400000);
       var colIndex = Math.trunc(dayIndex / 7);
       var numWeeks = colIndex + 1;
-      calendarHeatmap.settings.width = container.offsetWidth < 1200 ? 1200 : container.offsetWidth;
+      calendarHeatmap.settings.width = 1800;//container.offsetWidth < 1350 ? 1800 : (container.offsetWidth);
       //calendarHeatmap.settings.item_size = ((calendarHeatmap.settings.width - calendarHeatmap.settings.label_padding) / numWeeks - calendarHeatmap.settings.gutter);
       //calendarHeatmap.settings.height = calendarHeatmap.settings.label_padding + 7 * (calendarHeatmap.settings.item_size + calendarHeatmap.settings.gutter);
 	  
